@@ -1,0 +1,90 @@
+*{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 0rem;
+    font-size: x-large;
+}
+#nav ul li{
+    display: inline-block;
+    flex-direction: column;
+    list-style: none;
+    margin: 20px 10px;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+}
+.services {
+color: white;
+}
+
+.aboutme {
+    color: white;
+}
+#list {
+    text-align: auto;
+    padding: auto;
+}
+.skills {
+    color: white;
+
+}
+h1 + ul{
+    padding-left: 1rem;
+}
+.socialmediaprofiles {
+    color: white;
+} 
+.socialmediaprofiles ul{
+    padding-left: 1rem;
+}
+#list{
+    padding-left: 1rem;
+}
+.services,.aboutme,.skills,.socialmediaprofiles,.home {
+    flex-direction: column;
+    font-size: xxx-large;
+    padding-top: 5rem;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+    text-align: center;
+}
+#myaccount {
+    padding: 0.1rem;
+}
+aside {
+    color: white;
+    width: 25%;
+    padding-left: 20px;
+    margin-left: 150px;
+    margin-top: -28%;
+}
+#text2 {
+    color: white;
+    width: 25%;
+    padding-left: 20px;
+    margin-left: 150px;
+    margin-top: 6%;
+} 
+#text3 {
+    color: white;
+    width: 25%;
+    padding-left: 20px;
+    margin-left: 150px;
+    margin-top: 6%;
+}
