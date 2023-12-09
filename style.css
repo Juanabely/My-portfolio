@@ -1,17 +1,24 @@
 *{
-    background-color: black;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-image: url(./images/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-#nav{
+html{
+    scroll-behavior: smooth;
+}
+#nav {
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding-left: 0rem;
+    padding-left: 4rem;
     font-size: x-large;
 }
 #nav ul li{
@@ -50,19 +57,40 @@ h1 + ul{
 #list{
     padding-left: 1rem;
 }
-.services,.aboutme,.skills,.socialmediaprofiles,.home {
+.home{
+    padding-left: 1rem;
+    font-size: xx-large;
+    margin-top: 15%;
+}
+body{
+}
+.services,.aboutme,.skills,.socialmediaprofiles{
     flex-direction: column;
     font-size: xxx-large;
-    padding-top: 5rem;
-    height: 70vh;
+    padding-top: 20rem;
+    height: vh;
     display: flex;
     align-items: center;
 }
-a {
+div ul li a {
     color: white;
-    text-decoration: none;
     padding: 1.5rem;
     text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+div ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0%;
+    bottom: 1rem;
+    transition: 0.5s;
+}
+div ul li a:hover::after{
+    width: 100%;
 }
 #myaccount {
     padding: 0.1rem;
@@ -72,19 +100,82 @@ aside {
     width: 25%;
     padding-left: 20px;
     margin-left: 150px;
-    margin-top: -28%;
+    margin-top: -21rem;
 }
 #text2 {
     color: white;
     width: 25%;
     padding-left: 20px;
     margin-left: 150px;
-    margin-top: 6%;
+    margin-top: 5rem;
 } 
 #text3 {
     color: white;
     width: 25%;
     padding-left: 20px;
     margin-left: 150px;
-    margin-top: 6%;
+    margin-top: 6rem;
 }
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+/* Default styles for all screen sizes */
+* {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  /* Media query for screens wider than 600 pixels */
+@media screen and (min-width: 601px) {
+    #nav {
+      font-size: larger;
+      /* Other styles for larger screens */
+    }
+    .services,
+    .aboutme,
+    .skills,
+    .socialmediaprofiles,
+    .home {
+      font-size: xx-large;
+      /* Other adjustments for larger screens */
+    }
+    aside,
+    #text2,
+    #text3 {
+      width: 25%;
+      /* Other styles for larger screens */
+    }
+}
+  /* Media query for screens 600 pixels or narrower */
+@media screen and (max-width: 600px) {
+    #nav {
+      font-size: medium;
+      /* Other styles for smaller screens */
+    }
+    .services,
+    .aboutme,
+    .skills,
+    .socialmediaprofiles,
+    .home {
+      font-size: medium;
+      /* Other adjustments for smaller screens */
+    }
+  
+    aside,
+    #text2,
+    #text3 {
+      width: 100%;
+      /* Other styles for smaller screens */
+    }
+  }
+  .slideMiddle {
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slideRest {
+    transform: translateX(-200%);
+    transition: transform 0.5s ease-in-out;
+  }
+  

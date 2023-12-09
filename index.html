@@ -7,47 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="nav">
+    <div id="body">
+
+    <div id="nav">
         <div id="nav-bar">
             <ul style="padding: 2rem; gap: 3rem;">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">AboutMe</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#aboutme">AboutMe</a></li>
             <li>JUAN~ABELY</li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Social media profiles</a></li>
-            <li><a href="#">Hobbies</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#socialmediaprofiles">Social media profiles</a></li>
+            <li><a href="#">Contacts</a></li>
         </ul>
-        </div>
+        </div></div>
     </section>
-    <section class="home">
-        <h1 style="color: white;">I'm ABEL </h1>
-        <br>
-        <h2 style="color: white;">This is how you can reach me.........</h2>
-        <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%;" src="./images/1608790_phone_icon.png" att="phone icon"><p>
-        </p>
-        <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%;" src="./images/1047447_gmail_google_inbox_mail_icon.png" att="gmailicon">
-        <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; width: 5%; border-radius: 50%;" src="./images/287697_linkedin_icon.png" att="linkedin">
-        <aside>
-        <div id="text">
-            <p>
-0727526707
-            </p>
-        </div></aside>
-        <div id="text2">
-            <p>
-                abelkipkorir185@gmail.com
-            </p>
-        </div>
-        <div id="text3">
-            <p>
-                AbelKipkorir
-            </p>
-        </div>
-        <br>
-        
+    <section class="home"><!-- Assuming you have an ID for the Home link -->
+        <h1 style="color: white;">Hi,i'm <span class="name">ABEL</span> </h1>          
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div id="services-1">
         <h1>Services i offer are as follows...</h1>
             <ul>
@@ -57,13 +35,14 @@
     </h1>
 </div>
     </section>
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
 <h1>
     What i can say about me....
 </h1>
 <p>I'm a software developer and i'm very passionate about what i do.Mostly i like making web designs and also building cool web apps.</p>
 <h2>
-    Hobbies
+    <br>
+    <div id="hobbies">Hobbies</div>
 </h2>
 <p>
     <ul id="list">
@@ -75,7 +54,7 @@
     </ul>
 </p>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <h1>
             Skills
         </h1>
@@ -85,8 +64,7 @@
             <li>Java-script</li>
         </ul>
     </section>
-    <h2>.....currently im on;</h2>ion>
-    <section class="socialmediaprofiles">
+    <section class="socialmediaprofiles" id="socialmediaprofiles">
         <h2>
             .....currently im on;</h2>
             <ul>
@@ -98,8 +76,30 @@
                 <li>Github</li>
                 <li>Twitter</li>
             </ul> 
+            <section class="conacts" id="contacts"> <h2 style="color: white;">This is how you can reach me.........</h2>
+                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%;" src="./images/1608790_phone_icon.png" att="phone icon"><p>
+                </p>
+                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%; max-width: 100%" src="./images/1047447_gmail_google_inbox_mail_icon.png" att="gmailicon">
+                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; width: 5%; border-radius: 50%;" src="./images/287697_linkedin_icon.png" att="linkedin">
+                <aside>
+                <div id="text">
+                    <p>
+        0727526707
+                    </p>
+                </div></aside>
+                <div id="text2">
+                    <p>
+                        abelkipkorir185@gmail.com
+                    </p>
+                </div>
+                <div id="text3">
+                    <p>
+                        AbelKipkorir
+                    </p>
+                </div>
+                <br></section>
         
-    </section>
+    </section></div>
 
     
 </body>
