@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        
     </style>
 </head>
 <body>
-    <div id="nav">
-        <div id="nav-bar">
-            <ul style="padding: 2rem; gap: 3rem;">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#aboutme">AboutMe</a></li>
-            <li>JUAN~ABELY</li>
-            <li><a href="#skills">Skills</a></li>
-            <li style=><a href="#socialmediaprofiles">Social media profiles</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-        </div></div>
+    <header class="header">
+        <div id="menu-icon" class='bx bx-menu'></div>
+        <nav class="nav-bar" id="nav">
+            
+            <a href="#home">Home</a>
+            <a href="#aboutme">AboutMe</a>
+            <a href="#services">Services</a>
+            <a>JUAN~ABELY</a>
+            <a href="#skills">Skills</a>
+            <a href="#socialmediaprofiles">Social media profiles</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </div>
+    <img class="menu-icon" src="./images/bx-menu.svg">
+</header>
     <section class="home" id="home">
         <div class="home-content">
         <h1 style="color: white;">Hi,i'm <span class="name">ABEL</span></h1>
@@ -39,49 +44,117 @@
         </div>
     </div>         
     </section>
-    <section class="services" id="services">
-        <div id="services-1">
-        <h1>Services i offer are as follows...</h1>
-            <ul>
-        <li>Web development</li>
-        <li>Web design</li></p>
-        </ul>
-    </h1>
 </div>
     </section>
     <section class="aboutme" id="aboutme">
-<h1>
-    What i can say about me....
-</h1>
+<h1 class="head">
+    What i can say about <span>me....</span></h1>
+    <div class="about-img">
+        <img src="./images/background Cropped.jpg" alt="">
+        <span class="circle-spin"></span>
+    </div>
+    <div class="about-content">
 <p>I'm a software developer and i'm very passionate about what i do.Mostly i like making web designs and also building cool web apps.</p>
+
 <h2>
-    <br>
     <div id="hobbies">Hobbies</div>
-</h2>
-<p>
-    <ul id="list">
+</h2></div>
+    <ul id="list" style="font-size: 1.2rem;">
         <li>
             I like mountain climbing it gives me inspiration
         </li>
         <li>Gaming is also a big part of my life,it cools my nerves.</li>
         <LI>Swimming too is fun</LI>
     </ul>
-</p>
+<section class="services" id="services" >
+    <h2 class="heading"><span>Services</span> i offer are as follows...</h2>
+    <div class="services-container">
+        <div class="services-box">
+            <img src="./images/bx-code-alt.svg" alt="" style="background-color: aliceblue;">
+            <h3>Web Development</h3>
+            <p>Building dynamic digital solutions, tailored to exceed your online ambitions.</p>
+            <div class="btn-box"><a href="#" class="btn" style="color: black;">Read more</a></div>
+        </div>
+    </div>
+    <div class="services-box">
+        <img src="./images/bxl-sketch.svg" alt="" style="background-color: aliceblue;">
+        <h3>Web Design</h3>
+        <p>Designing captivating digital landscapes that blend innovation and functionality, tailored to elevate your online presence.</p>
+        <div class="btn-box"><a href="#" class="btn" style="color: black;">Read more</a></div>
+    </div>
+    <div class="services-box">
+        <img src="./images/bxs-camera.svg" alt="" style="background-color: aliceblue;">
+        <h3>Photography</h3>
+        <p>Capturing moments, crafting memories that last a lifetime!</p>
+        <div class="btn-box"><a href="#" class="btn" style="color: black;">Read more</a></div>
+    </div>
     </section>
     <section class="skills" id="skills">
-        <h1>
+        <h1 style="font-size: 6.5rem; color: #ff004f;" >
             Skills
         </h1>
-        <ul>
-            <li>HTML&#60;&#62;</li>
-            <li>CSS</li>
-            <li>Java-script</li>
-        </ul>
+        <div class="skills-row">
+            <div class="skills-column">
+                    <h3 class="title">Coding Skills </h3>     
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>CSS <span>40%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Javascript <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Softskills <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                        </div>
+                    </div>           
+            </div>
+            <div class="skills-column">
+                <h3 class="title">Professional skills</h3>     
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>WebDevelopment <span>40%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>WebDesign <span>40%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Photography <span>50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Graphic Design <span>30%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>           
+        </div>
+        </div>
+        
     </section>
     <section class="socialmediaprofiles" id="socialmediaprofiles">
-        <h2>
+        <h2 style="font-size: 5rem; color: #ff004f;">
             .....currently im on;</h2>
-            <ul>
+            <ul style="font-size: 2.5rem; gap: 2.5rem; padding: 2.5rem;">
                 <li>
                     <dl>
                         <dt>instagram</dt>
@@ -90,31 +163,39 @@
                 <li>Github</li>
                 <li>Twitter</li>
             </ul> 
-            <section class="conacts" id="contacts"> <h2 style="color: white;">This is how you can reach me.........</h2>
-                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%;" src="./images/1608790_phone_icon.png" att="phone icon"><p>
-                </p>
-                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%; max-width: 100%" src="./images/1047447_gmail_google_inbox_mail_icon.png" att="gmailicon">
-                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; width: 5%; border-radius: 50%;" src="./images/287697_linkedin_icon.png" att="linkedin">
-                <aside>
-                <div id="text">
-                    <p>
+            <section class="conacts" id="contacts">
+                 <h2 style="color: #ff004f; font-size: 5rem;">This is how you can reach me.........</h2>
+                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%;" src="./images/1608790_phone_icon.png" att="phone icon"><p>  <div id="text">
+                    <p style="font-size: 2.5rem;">
         0727526707
                     </p>
-                </div></aside>
-                <div id="text2">
-                    <p>
+                </p>
+                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; border-radius: 50%; width: 5%; max-width: 100%" src="./images/1047447_gmail_google_inbox_mail_icon.png" att="gmailicon">  <div id="text2">
+                    <p style="font-size: 2.5rem;">
                         abelkipkorir185@gmail.com
                     </p>
+                <img style="background-color: whitesmoke; margin: 2rem; margin-right: 20rem; width: 5%; border-radius: 50%;" src="./images/287697_linkedin_icon.png" att="linkedin">
+                <aside>
+              
+                </div></aside>
+              
                 </div>
                 <div id="text3">
-                    <p>
+                    <p style="font-size: 2.5rem;">
                         AbelKipkorir
                     </p>
                 </div>
                 <br></section>
         
     </section></div>
-
-    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2023 by Abel | All Rights Reserved.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#"><img style="background-color: aliceblue;" src="./images/bx-up-arrow-alt.svg"> </a>
+        </div>
+    </footer>
+    <script src="boxicons.js"></script>
 </body>
 </html>

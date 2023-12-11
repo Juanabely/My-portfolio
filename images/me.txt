@@ -1,0 +1,10 @@
+{
+    background-color: black;
+    color: white;
+    display: inline-block
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 6rem;
+    font-size: large;
+    position: fixed;
