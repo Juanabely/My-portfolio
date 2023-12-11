@@ -25,10 +25,10 @@ a {
     text-decoration: none;
 }
 .nav-bar a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: aliceblue;
     font-weight: 500;
-    margin-left: 7.5rem;
+    margin-left: 5.5rem;
     transition: .3s;
     text-align: center;
     position: relative;
@@ -143,12 +143,14 @@ width: 100%;
     left: 0;
     width: 100%;
     background: transparent;
-    justify-content: space-between;
     align-items: center;
     z-index: 100;
-    padding: 0.5rem;
     display: flex;
+    margin-left: -2rem;
+    gap: -2rem;
+    padding-left: -4rem;
     transition: .3s;
+    font-size: smaller;
 }
 .header .sticky {
 background: yellowgreen;
